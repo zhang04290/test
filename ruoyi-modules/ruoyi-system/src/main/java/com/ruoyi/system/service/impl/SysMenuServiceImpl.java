@@ -282,6 +282,7 @@ public class SysMenuServiceImpl implements ISysMenuService
     @Override
     public int insertMenu(SysMenu menu)
     {
+        System.out.println(menu.getMenuId());
         return menuMapper.insertMenu(menu);
     }
 
